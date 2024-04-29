@@ -1549,7 +1549,7 @@ ExecParallelHashRepartitionRest(HashJoinTable hashtable)
 			++hashtable->batches[batchno].ntuples;
 			++hashtable->batches[i].old_ntuples;
 
-			/* Store the tuple its new batch. */
+			/* Store the tuple in its new batch. */
 			sts_puttuple(hashtable->batches[batchno].inner_tuples,
 						 &hashvalue, tuple);
 
